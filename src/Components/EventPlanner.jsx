@@ -1,5 +1,7 @@
 import React from 'react';
 import './EventPlanner.css'; // Import CSS file for styling
+import Footer from './Footer'; // include Footer component as attribute as below
+                  
 
 const EventPlanner = () => {
     return (
@@ -64,11 +66,20 @@ const EventPlanner = () => {
                         </div>
                     </section>
                     <section className="contact">
-
+                    <h2>Contact Us</h2>
+                        <form>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <textarea placeholder="Message"></textarea>
+                            <button className="submit-button">Send</button>
+                        </form>
                     </section>
+                      <Footer/>
             </header>
         </div>
     );
+    
+    
 };
 
 export default EventPlanner;
